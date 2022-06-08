@@ -19,15 +19,7 @@ bot = Client(
 
 BOT = TelegramClient('BOT', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
-user = Client(
-    SESSION_NAME,
-    api_id=API_ID,
-    api_hash=API_HASH,
-)
+user = None
 
-Test = Client(SESSION_NAME, api_id=API_ID, api_hash=API_HASH, plugins={'root': 'Zaid.Player'})
-call_py = PyTgCalls(
-    Test,
-    cache_duration=100,
-    overload_quiet_mode=True,
-)
+Test = None
+call_py = None
