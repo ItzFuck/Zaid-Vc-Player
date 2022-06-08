@@ -4,7 +4,8 @@ import random
 import asyncio
 import telethon.utils
 from telethon import TelegramClient, events
-from config import API_HASH, API_ID, BOT_TOKEN, SESSION_NAME
+from config import API_HASH, API_ID, BOT_TOKEN
+SESSION_NAME = None
 from pyrogram import Client
 from pytgcalls import PyTgCalls
 
